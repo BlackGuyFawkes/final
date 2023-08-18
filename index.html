@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>Responsive Website</title>
+</head>
+<body>
+    <header>
+        <h1>Akachi Maduako</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="top-section">
+            <img src="akachi2.jpg" alt="Akachi Maduako">
+            <h2>CyberSecurity Analyst</h2>
+            <a href="resume.pdf" download>Resume</a>
+            <a href="#contact">Contact Me</a>
+        </section>
+        
+        <section id="infographic">
+            <div class="infographic-side">
+                <h2>About Me and Academic Policy</h2>
+                <p>I declare that my assessment is wholly my own work in accordance with Seneca Academic Policy. No part of this assessment has been copied manually or electronically from any othersource (including web sites) except for the information supplied by the WEB222 instructors and / or made available in this assessment for my use. I also declare that no part of this assignment has been distributed to other students.</p>
+                <p class="date">Date: August 14, 2023</p>
+            </div>
+            <div class="infographic-side">
+                <h2>Basic Information</h2>
+                <p>Age: 27</p>
+                <p>Email: amaduako@myseneca.ca</p>
+                <p>Language: English</p>
+                <p>Class Section: Web222</p>
+                <p>Student ID: 107000226</p>
+                <p>Instructor: Robin Li</p>
+            </div>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <p>B.Sc</p>
+            <p>Microbiology</p>
+            <p>Alex Ekwueme University, Nigeria</p>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>Programming Languages: HTML, CSS, JavaScript, Python, C++</li>
+                <li>Frameworks: React, Node.js</li>
+                <li>Version Control: Git</li>
+                <li>Database: MySQL</li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form id="contact-form" action="https://httpbin.org/post" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="street">Street Address:</label>
+                <input type="text" id="street" name="street" required>
+
+                <label for="city">City:</label>
+                <input type="text" id="city" name="city" required>
+
+                <label for="province">Province:</label>
+                <input type="text" id="province" name="province" list="provinces" required>
+                <datalist id="provinces">
+                    <option value="Alberta">
+                    <option value="British Columbia">
+                    <option value="Manitoba">
+                    <option value="New Brunswick">
+                    <option value="Newfoundland and Labrador">
+                    <option value="Nova Scotia">
+                    <option value="Ontario">
+                    <option value="Prince Edward Island">
+                    <option value="Quebec">
+                    <option value="Saskatchewan">
+                    <option value="Northwest Territories">
+                    <option value="Nunavut">
+                    <option value="Yukon">
+                </datalist>
+
+                <label for="postal-code">Postal Code:</label>
+                <input type="text" id="postal-code" name="postal_code" pattern="[A-Za-z]\d[A-Za-z] ?\d[A-Za-z]\d" required>
+
+                <label>What is this about:</label>
+                <input type="radio" id="job-offer" name="about" value="Job Offer" required>
+                <label for="job-offer">Job Offer</label>
+                <input type="radio" id="school" name="about" value="School" required>
+                <label for="school">School</label>
+                <input type="radio" id="other" name="about" value="Other" required>
+                <label for="other">Other</label>
+                <input type="text" id="other-topic" name="other_topic" style="display: none;">
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <!-- Your additional input control here -->
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+        
+        
+        <!-- More content goes here -->
+    </main>
+    <footer>
+        <p>&copy; 2023 My Responsive Website</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
